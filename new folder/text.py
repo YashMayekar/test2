@@ -199,3 +199,4 @@ if __name__ == "__main__":
     results = analyzer.analyze_all()
     
     analyzer.print_summary(results)
+    # Optionally, save results to a file

@@ -198,4 +198,3 @@ if __name__ == "__main__":
     print("Analyzing data...")
     results = analyzer.analyze_all()
     
-    analyzer.print_summary(results)

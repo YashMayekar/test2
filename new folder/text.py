@@ -4,7 +4,7 @@ import json
 from collections import defaultdict
 
 # Generate large amounts of random data
-data = []
+data = [] 
 
 # Create 100,000 random strings
 for i in range(100000):
@@ -41,5 +41,20 @@ unique_count = len(unique_values)
 grouped_count = len(grouped_data)
 max_group_size = max(len(v) for v in grouped_data.values()) if grouped_data else 0
 
+# Store analysis results in JSON format
+json_results = {
+    "data_size": result,
+    "dict_size": dict_size,
+    "list_size": list_size,
+    "unique_values": unique_count,
+    "grouped_items": grouped_count,
+    "max_group_size": max_group_size
+}
+
+# Convert to JSON string
+json_output = json.dumps(json_results, indent=2)
+
 print(f"Data size: {result}, Dict size: {dict_size}, List size: {list_size}")
 print(f"Unique values: {unique_count}, Grouped items: {grouped_count}, Max group size: {max_group_size}")
+print("\nJSON Analysis Results:")
+print(json_output)

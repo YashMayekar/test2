@@ -1,7 +1,11 @@
-kskjfflklkzsvkskdv
-fb
-bb
-zddf
-zd
-zd
-h
+import random
+import string
+
+# Generate random text
+random_text = ''.join(random.choices(string.ascii_letters + string.digits + '\n', k=10000))
+
+# Write to file
+with open('/c:/Users/Yash Mayekar/Projects/MLSC/test2/test.txt', 'a') as f:
+    f.write(random_text)
+
+print("File updated with random text")

@@ -196,9 +196,6 @@ if __name__ == "__main__":
     analyzer.register_generator("sets", SetDataGenerator(count=100000, length=20))
     analyzer.register_generator("grouped", GroupedDataGenerator(count=200000))
     
-    print("Generating data...")
-    analyzer.generate_all()
-    
     print("Analyzing data...")
     results = analyzer.analyze_all()
     

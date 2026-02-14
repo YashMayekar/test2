@@ -1,0 +1,7 @@
+I'd be happy to help you generate code, but I need more details:
+
+1. **What programming language?** (Python, JavaScript, Java, C++, etc.)
+2. **What should the code do?** (CLI app, data processing, web server, algorithm implementation, etc.)
+3. **How large?** (hundreds of lines, thousands, etc.)
+
+Could you clarify what you're building so I can generate relevant, useful code for you?

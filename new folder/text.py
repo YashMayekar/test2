@@ -190,7 +190,6 @@ class DataAnalyzer:
 if __name__ == "__main__":
     analyzer = DataAnalyzer()
     
-    analyzer.register_generator("strings", StringDataGenerator(count=1000000, length=500))
     analyzer.register_generator("dicts", DictDataGenerator(count=100000, nested_size=50))
     analyzer.register_generator("tuples", TupleDataGenerator(count=500000, string_length=200))
     analyzer.register_generator("sets", SetDataGenerator(count=100000, length=20))

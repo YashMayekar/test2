@@ -48,16 +48,6 @@ class AnalysisResult:
     list_size: int
 
 
-class DataGenerator(ABC):
-    """Abstract base class for data generators"""
-    
-    @abstractmethod
-    import random
-import string
-from abc import ABC, abstractmethod
-from typing import Dict, Any
-from dataclasses import dataclass
-from enum import Enum
 
 
 class DataType(Enum):

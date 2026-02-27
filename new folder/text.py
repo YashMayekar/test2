@@ -38,3 +38,19 @@ class DataGenerator(ABC):
     @abstractmethod
     def generate(self) -> Any:
         pass
+
+
+@dataclass
+class AnalysisResult:
+    """Data class for storing analysis results"""
+    data_size: int
+    dict_size: int
+    list_size: int
+
+
+class DataGenerator(ABC):
+    """Abstract base class for data generators"""
+    
+    @abstractmethod
+    def generate(self) -> Any:
+        pass

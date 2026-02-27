@@ -30,6 +30,9 @@ def read_data(path):
     with open(path, "r") as f:
         return f.readlines()
 
+def read_data(path):
+def read_data(path):
+def read_data(path):
 
 
 @dataclass

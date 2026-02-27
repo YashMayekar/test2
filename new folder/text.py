@@ -38,14 +38,3 @@ class DataGenerator(ABC):
     @abstractmethod
     def generate(self) -> Any:
         pass
-
-
-class DictDataGenerator(DataGenerator):
-    def __init__(self, count: int = 100000, nested_size: int = 50):
-        self.count = count
-        self.nested_size = nested_size
-        self.data = {}
-    
-    def generate(self) -> Dict:
-        self.data = {f"key_{i}": {"nested_key": ''.join(random.choices(string.ascii_letters, k=500)), "value": random.randint(0, 10000000)} for i in range(self.count)}
-        return self.data

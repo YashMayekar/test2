@@ -49,21 +49,3 @@ class DictDataGenerator(DataGenerator):
     def generate(self) -> Dict:
         self.data = {f"key_{i}": {"nested_key": ''.join(random.choices(string.ascii_letters, k=500)), "value": random.randint(0, 10000000)} for i in range(self.count)}
         return self.data
-
-
-class DataAnalyzer:
-    def __init__(self):
-        self.generators: Dict[str, DataGenerator] = {}
-    
-    def register_generator(self, name: str, generator: DataGenerator) -> None:
-        self.generators[name] = generator
-    
-    def generate_all(self) -> None:
-        for generator in self.generators.values():
-            generator.generate()
-
-
-if __name__ == "__main__":
-    analyzer = DataAnalyzer()
-    analyzer.register_generator("dicts", DictDataGenerator(count=100000, nested_size=50))
-    analyzer.generate_all()

@@ -15,6 +15,7 @@ class DataType(Enum):
     GROUPED = "grouped"
 
 
+
 @dataclass
 class AnalysisResult:
     """Data class for storing analysis results"""

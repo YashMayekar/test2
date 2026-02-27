@@ -21,14 +21,7 @@ def read_data(path):
     """Read and return all lines from the data file."""
     with open(path, "r") as f:
         return f.readlines()
-def read_data(path):
-    """Read and return all lines from the data file."""
-    with open(path, "r") as f:
-        return f.readlines()
-def read_data(path):
-    """Read and return all lines from the data file."""
-    with open(path, "r") as f:
-        return f.readlines()
+
 
 
 @dataclass
